@@ -1,4 +1,5 @@
 # to_do_list
+
 tasks = []
 
 while True:
@@ -16,7 +17,7 @@ while True:
         print(f"Added task: {task}")
     elif choice == '2':
         if not tasks:
-            print("Your to-do list is empty. Nothing to remove,")
+            print("Your to-do list is empty. Nothing to remove.")
         else:
             print("Your tasks:")
             for i, task in enumerate(tasks, start=1):
@@ -38,7 +39,6 @@ while True:
             print("Your tasks:")
             for i, task in enumerate(tasks, start=1):
                 print(f"{i}. {task}")
-
     elif choice == '4':
         print("Goodbye!")
         break
